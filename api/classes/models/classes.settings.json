@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Classes",
+  "info": {
+    "name": "classes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "required": true
+    },
+    "bookingURL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "required": true,
+      "default": "Beginner"
+    },
+    "animation": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "blurb": {
+      "type": "text",
+      "required": true
+    },
+    "categories": {
+      "via": "classes",
+      "collection": "categories"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

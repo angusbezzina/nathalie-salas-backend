@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resources-page",
+      "handler": "resources-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resources-page",
+      "handler": "resources-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resources-page",
+      "handler": "resources-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
