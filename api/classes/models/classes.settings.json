@@ -71,6 +71,16 @@
     "slug": {
       "type": "string",
       "unique": true
+    },
+    "featureVideo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

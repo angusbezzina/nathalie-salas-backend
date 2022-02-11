@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/classes-page",
+      "handler": "classes-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/classes-page",
+      "handler": "classes-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/classes-page",
+      "handler": "classes-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
