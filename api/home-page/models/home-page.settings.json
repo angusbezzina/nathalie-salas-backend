@@ -34,7 +34,7 @@
       "type": "richtext",
       "required": true
     },
-    "about": {
+    "aboutMe": {
       "type": "richtext",
       "required": true
     }
