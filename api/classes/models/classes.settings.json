@@ -40,16 +40,6 @@
       "type": "integer",
       "required": true
     },
-    "level": {
-      "type": "enumeration",
-      "enum": [
-        "Beginner",
-        "Intermediate",
-        "Advanced"
-      ],
-      "required": true,
-      "default": "Beginner"
-    },
     "animation": {
       "model": "file",
       "via": "related",
