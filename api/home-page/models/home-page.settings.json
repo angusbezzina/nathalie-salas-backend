@@ -35,8 +35,18 @@
       "type": "richtext",
       "required": true
     },
+    "aboutMePhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
     "aboutMe": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     }
   }
